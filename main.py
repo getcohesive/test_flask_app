@@ -20,7 +20,7 @@ def hello():
             cursor = connection.cursor()
             cursor.execute("select database();")
             record = cursor.fetchone()
-            print("You're connected to database: ", record)
+            print("You are connected to database: ", record)
 
     except Error as e:
         print("Error while connecting to MySQL", e)
