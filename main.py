@@ -15,6 +15,7 @@ def hello():
                                              user=os.getenv('USER'),
                                              password=os.getenv('PASSWORD'))
         if connection.is_connected():
+            print("testing")
             db_Info = connection.get_server_info()
             print("Connected to MySQL Server version ", db_Info)
             cursor = connection.cursor()
